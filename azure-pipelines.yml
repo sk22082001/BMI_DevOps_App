@@ -12,7 +12,7 @@ steps:
 
   inputs:
 
-    versionSpec: '12.x'
+    versionSpec: '14.x'
 
   displayName: 'Install Node.js'
  
