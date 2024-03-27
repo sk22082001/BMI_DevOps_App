@@ -22,4 +22,11 @@ steps:
 
   displayName: 'Install dependencies'
  
+- script: |
+
+    npm test
+
+  displayName: 'Run tests'
+
+ 
 
