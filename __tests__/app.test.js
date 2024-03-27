@@ -2,16 +2,6 @@ const request = require("supertest");
 const app = require("../bmi-calculator");
 
 describe('POST /calculate', () => {
-  let server;
-
-  beforeAll(() => {
-    server = app.listen(8000); // Start the server before running tests
-  });
-
-  afterAll((done) => {
-    server.close(done); // Close the server after all tests have completed
-  });
-
   it('should return 400 if weight or height is not provided', async () => {
     const response = await request(app)
       .post('/calculate')
