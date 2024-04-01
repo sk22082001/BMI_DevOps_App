@@ -3,7 +3,7 @@ trigger:
 
 schedules:
 - cron: "45 10 * * *"
-  displayName: Daily build
+  displayName: Overnight build
   branches:
     include:
     - main
